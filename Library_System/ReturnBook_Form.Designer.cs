@@ -1,6 +1,6 @@
 ﻿namespace Library_System
 {
-    partial class BorrowBook_Form
+    partial class ReturnBook_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,6 @@
             this.txt_desc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,11 +61,11 @@
             this.panel3.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(0, -8);
+            this.panel3.Location = new System.Drawing.Point(-8, -9);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1816, 1122);
-            this.panel3.TabIndex = 9;
+            this.panel3.TabIndex = 10;
             // 
             // panel2
             // 
@@ -84,18 +83,17 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(654, 10);
+            this.label1.Location = new System.Drawing.Point(654, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(611, 115);
+            this.label1.Size = new System.Drawing.Size(583, 115);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Borrow Book";
+            this.label1.Text = "Return Book";
             this.label1.UseWaitCursor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Moccasin;
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button1);
@@ -132,22 +130,22 @@
             // 
             this.button1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(1449, 722);
+            this.button1.Location = new System.Drawing.Point(1478, 723);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(355, 50);
+            this.button1.Size = new System.Drawing.Size(250, 50);
             this.button1.TabIndex = 33;
-            this.button1.Text = "ACCEPT AND BORROW";
+            this.button1.Text = "RETURN BOOK";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox3.Location = new System.Drawing.Point(962, 637);
+            this.textBox3.Location = new System.Drawing.Point(980, 637);
             this.textBox3.Margin = new System.Windows.Forms.Padding(6);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(450, 41);
+            this.textBox3.Size = new System.Drawing.Size(432, 41);
             this.textBox3.TabIndex = 32;
             // 
             // label16
@@ -155,7 +153,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(802, 644);
+            this.label16.Location = new System.Drawing.Point(828, 644);
             this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(146, 36);
@@ -241,12 +239,12 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 88);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(732, 742);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 714);
             this.dataGridView1.TabIndex = 0;
             // 
             // label12
@@ -288,44 +286,34 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(754, 481);
+            this.label3.Location = new System.Drawing.Point(757, 481);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1081, 63);
             this.label3.TabIndex = 35;
             this.label3.Text = "__________________________________";
             // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox1.Location = new System.Drawing.Point(962, 705);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 41);
-            this.textBox1.TabIndex = 38;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(877, 708);
+            this.label4.Location = new System.Drawing.Point(39, 52);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 36);
+            this.label4.Size = new System.Drawing.Size(246, 36);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Fee:";
+            this.label4.Text = "Borrowed Books";
             // 
-            // BorrowBook_Form
+            // ReturnBook_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1813, 1123);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "BorrowBook_Form";
-            this.Text = "BorrowBook_Form";
+            this.Name = "ReturnBook_Form";
+            this.Text = "ReturnBook_Form";
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -339,10 +327,12 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox3;
@@ -358,7 +348,5 @@
         private System.Windows.Forms.TextBox txt_desc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
     }
 }
