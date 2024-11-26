@@ -74,6 +74,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.menuStrip1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -84,10 +85,10 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 1, 0, 1);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(904, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1808, 45);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -99,9 +100,9 @@
             this.genreToolStripMenuItem,
             this.dateToolStripMenuItem,
             this.recentlyAddedToolStripMenuItem});
-            this.menu_books.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_books.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_books.Name = "menu_books";
-            this.menu_books.Size = new System.Drawing.Size(65, 23);
+            this.menu_books.Size = new System.Drawing.Size(108, 41);
             this.menu_books.Text = "Books";
             this.menu_books.Click += new System.EventHandler(this.menu_books_Click);
             // 
@@ -110,83 +111,87 @@
             this.bookTitleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox1});
             this.bookTitleToolStripMenuItem.Name = "bookTitleToolStripMenuItem";
-            this.bookTitleToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.bookTitleToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
             this.bookTitleToolStripMenuItem.Text = "Book Title";
             // 
             // toolStripTextBox1
             // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 39);
             // 
             // authorsToolStripMenuItem
             // 
             this.authorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox2});
             this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
-            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
             this.authorsToolStripMenuItem.Text = "Authors";
             // 
             // toolStripTextBox2
             // 
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 39);
             // 
             // genreToolStripMenuItem
             // 
             this.genreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox3});
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
             this.genreToolStripMenuItem.Text = "Genre";
             // 
             // toolStripTextBox3
             // 
+            this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 39);
             // 
             // dateToolStripMenuItem
             // 
             this.dateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox4});
             this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
-            this.dateToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.dateToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
             this.dateToolStripMenuItem.Text = "Date";
             // 
             // toolStripTextBox4
             // 
+            this.toolStripTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox4.Name = "toolStripTextBox4";
-            this.toolStripTextBox4.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox4.Size = new System.Drawing.Size(100, 39);
             // 
             // recentlyAddedToolStripMenuItem
             // 
             this.recentlyAddedToolStripMenuItem.Name = "recentlyAddedToolStripMenuItem";
-            this.recentlyAddedToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.recentlyAddedToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
             this.recentlyAddedToolStripMenuItem.Text = "Recently Added";
             // 
             // menu_borrowBooks
             // 
-            this.menu_borrowBooks.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_borrowBooks.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_borrowBooks.Name = "menu_borrowBooks";
-            this.menu_borrowBooks.Size = new System.Drawing.Size(117, 23);
+            this.menu_borrowBooks.Size = new System.Drawing.Size(189, 41);
             this.menu_borrowBooks.Text = "Borrow Book";
             // 
             // toolStripMenuItem9
             // 
-            this.toolStripMenuItem9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem9.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(114, 23);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(181, 41);
             this.toolStripMenuItem9.Text = "Return Book";
             // 
             // toolStripMenuItem3
             // 
-            this.toolStripMenuItem3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(114, 23);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(181, 41);
             this.toolStripMenuItem3.Text = "Issue Report";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.BackColor = System.Drawing.Color.Moccasin;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox3);
@@ -202,28 +207,30 @@
             this.panel1.Controls.Add(this.txt_desc);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(-3, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-6, 154);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(917, 432);
+            this.panel1.Size = new System.Drawing.Size(1834, 831);
             this.panel1.TabIndex = 5;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.pictureBox1.Location = new System.Drawing.Point(595, 31);
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(1210, 71);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(332, 365);
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.Location = new System.Drawing.Point(739, 376);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(1478, 723);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 26);
+            this.button1.Size = new System.Drawing.Size(250, 50);
             this.button1.TabIndex = 33;
             this.button1.Text = "BORROW BOOK";
             this.button1.UseVisualStyleBackColor = true;
@@ -232,19 +239,21 @@
             // 
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox3.Location = new System.Drawing.Point(490, 331);
+            this.textBox3.Location = new System.Drawing.Point(980, 637);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 24);
+            this.textBox3.Size = new System.Drawing.Size(432, 41);
             this.textBox3.TabIndex = 32;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(414, 335);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(828, 644);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(74, 17);
+            this.label16.Size = new System.Drawing.Size(146, 36);
             this.label16.TabIndex = 31;
             this.label16.Text = "Category:";
             // 
@@ -252,33 +261,36 @@
             // 
             this.txt_price.Enabled = false;
             this.txt_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_price.Location = new System.Drawing.Point(792, 331);
+            this.txt_price.Location = new System.Drawing.Point(1584, 637);
+            this.txt_price.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txt_price.Name = "txt_price";
-            this.txt_price.Size = new System.Drawing.Size(72, 24);
+            this.txt_price.Size = new System.Drawing.Size(140, 41);
             this.txt_price.TabIndex = 30;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(738, 335);
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(1476, 644);
+            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 17);
+            this.label15.Size = new System.Drawing.Size(102, 36);
             this.label15.TabIndex = 29;
             this.label15.Text = "Pages:";
             // 
             // txt_qty
             // 
             this.txt_qty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_qty.Location = new System.Drawing.Point(792, 300);
+            this.txt_qty.Location = new System.Drawing.Point(1584, 577);
+            this.txt_qty.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txt_qty.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.txt_qty.Name = "txt_qty";
-            this.txt_qty.Size = new System.Drawing.Size(72, 24);
+            this.txt_qty.Size = new System.Drawing.Size(144, 41);
             this.txt_qty.TabIndex = 28;
             this.txt_qty.Value = new decimal(new int[] {
             1,
@@ -290,19 +302,21 @@
             // 
             this.txt_type.Enabled = false;
             this.txt_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_type.Location = new System.Drawing.Point(481, 301);
+            this.txt_type.Location = new System.Drawing.Point(962, 579);
+            this.txt_type.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txt_type.Name = "txt_type";
-            this.txt_type.Size = new System.Drawing.Size(227, 24);
+            this.txt_type.Size = new System.Drawing.Size(450, 41);
             this.txt_type.TabIndex = 27;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(414, 305);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(828, 587);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 17);
+            this.label11.Size = new System.Drawing.Size(120, 36);
             this.label11.TabIndex = 26;
             this.label11.Text = "Author:";
             // 
@@ -310,10 +324,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(716, 303);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(1432, 583);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 17);
+            this.label10.Size = new System.Drawing.Size(143, 36);
             this.label10.TabIndex = 25;
             this.label10.Text = "Quantity:";
             // 
@@ -321,22 +336,23 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 31);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 60);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(366, 386);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 742);
             this.dataGridView1.TabIndex = 0;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(490, 245);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(980, 471);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 17);
+            this.label12.Size = new System.Drawing.Size(166, 36);
             this.label12.TabIndex = 9;
             this.label12.Text = "Book Title:";
             // 
@@ -344,9 +360,10 @@
             // 
             this.txt_desc.Enabled = false;
             this.txt_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_desc.Location = new System.Drawing.Point(581, 241);
+            this.txt_desc.Location = new System.Drawing.Point(1162, 463);
+            this.txt_desc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txt_desc.Name = "txt_desc";
-            this.txt_desc.Size = new System.Drawing.Size(212, 24);
+            this.txt_desc.Size = new System.Drawing.Size(420, 41);
             this.txt_desc.TabIndex = 15;
             // 
             // label2
@@ -354,9 +371,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(356, 386);
+            this.label2.Location = new System.Drawing.Point(712, 742);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(558, 31);
+            this.label2.Size = new System.Drawing.Size(1081, 63);
             this.label2.TabIndex = 34;
             this.label2.Text = "__________________________________";
             // 
@@ -365,53 +383,56 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(355, 250);
+            this.label3.Location = new System.Drawing.Point(710, 481);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(558, 31);
+            this.label3.Size = new System.Drawing.Size(1081, 63);
             this.label3.TabIndex = 35;
             this.label3.Text = "__________________________________";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panel2.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel2.Location = new System.Drawing.Point(2, 27);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(-30, 52);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(912, 67);
+            this.panel2.Size = new System.Drawing.Size(1858, 129);
             this.panel2.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Wide Latin", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(335, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(433, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 40);
+            this.label1.Size = new System.Drawing.Size(1039, 115);
             this.label1.TabIndex = 0;
-            this.label1.Text = "BOOKS";
+            this.label1.Text = "The Beginnings Library";
+            this.label1.UseWaitCursor = true;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
+            this.panel3.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(0, 22);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(0, 42);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(908, 553);
+            this.panel3.Size = new System.Drawing.Size(1816, 1063);
             this.panel3.TabIndex = 7;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 545);
+            this.ClientSize = new System.Drawing.Size(1808, 1048);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
