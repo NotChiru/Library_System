@@ -16,35 +16,16 @@ namespace Library_System
         {
             InitializeComponent();
         }
+        ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
+        AddBooks_Form addBooks_Form = new AddBooks_Form();
 
-        private void menu_books_Click(object sender, EventArgs e)
+        private void btn_addBook_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void bookTitleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
+            addBooks_Form.ShowDialog();
         }
 
         private void btn_bookDetails_Click(object sender, EventArgs e)
         {
-            ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
             viewBooks_Form.ShowDialog();
         }
     }

@@ -36,13 +36,13 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logout = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_return = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_books = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_library = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +71,7 @@
             this.Account_Details.TabIndex = 22;
             this.Account_Details.TabStop = true;
             this.Account_Details.Text = "View Account";
+            this.Account_Details.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Account_Details_LinkClicked_1);
             // 
             // label12
             // 
@@ -96,7 +97,7 @@
             this.toolStripMenuItem5,
             this.toolStripMenuItem7,
             this.toolStripMenuItem3,
-            this.toolStripMenuItem2,
+            this.logout,
             this.toolStripMenuItem6,
             this.menu_return,
             this.toolStripMenuItem1,
@@ -156,6 +157,28 @@
             this.toolStripMenuItem4.Size = new System.Drawing.Size(240, 28);
             this.toolStripMenuItem4.Text = "                               ";
             // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem3.Enabled = false;
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem3.Text = "                                            ";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem7.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem7.Enabled = false;
+            this.toolStripMenuItem7.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem7.Text = "                                            ";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
@@ -167,17 +190,18 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // toolStripMenuItem2
+            // logout
             // 
-            this.toolStripMenuItem2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.DimGray;
-            this.toolStripMenuItem2.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
-            this.toolStripMenuItem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.toolStripMenuItem2.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.Snow;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 35);
-            this.toolStripMenuItem2.Text = "LOG OUT";
+            this.logout.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.logout.BackColor = System.Drawing.Color.DimGray;
+            this.logout.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
+            this.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logout.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout.ForeColor = System.Drawing.Color.Snow;
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(240, 35);
+            this.logout.Text = "LOG OUT";
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // menu_return
             // 
@@ -220,28 +244,6 @@
             this.menu_library.Text = "Library Menu";
             this.menu_library.Click += new System.EventHandler(this.menu_library_Click);
             // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem3.Enabled = false;
-            this.toolStripMenuItem3.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem3.Text = "                                            ";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem7.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem7.Enabled = false;
-            this.toolStripMenuItem7.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem7.Text = "                                            ";
-            // 
             // Library_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,10 +251,11 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(1155, 552);
             this.Controls.Add(this.panel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
             this.Name = "Library_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Library_Menu";
+            this.Text = "Library Menu";
             this.Load += new System.EventHandler(this.Library_Menu_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -275,7 +278,7 @@
         private System.Windows.Forms.ToolStripMenuItem menu_library;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem logout;
         private System.Windows.Forms.LinkLabel Account_Details;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;

@@ -23,10 +23,6 @@ namespace Library_System
 
         }
 
-        private void menu_books_Click(object sender, EventArgs e)
-        {
-
-        }
         private void btn_login_Click(object sender, EventArgs e)
         {
             if (txt_email.Text == "admin")
@@ -44,7 +40,7 @@ namespace Library_System
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

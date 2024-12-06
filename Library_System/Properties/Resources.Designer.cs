@@ -73,79 +73,9 @@ namespace Library_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap black_border {
-            get {
-                object obj = ResourceManager.GetObject("black_border", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Black_Square_Frame_PNG_Clipart_Background {
-            get {
-                object obj = ResourceManager.GetObject("Black-Square-Frame-PNG-Clipart-Background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap blackBorder_transparent {
             get {
                 object obj = ResourceManager.GetObject("blackBorder_transparent", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap border_transparent {
-            get {
-                object obj = ResourceManager.GetObject("border transparent", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap chasing_sunsets_rw_2880x1800 {
-            get {
-                object obj = ResourceManager.GetObject("chasing-sunsets-rw-2880x1800", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Frame_Border_Transparent_Image {
-            get {
-                object obj = ResourceManager.GetObject("Frame_Border_Transparent_Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap library_bg {
-            get {
-                object obj = ResourceManager.GetObject("library_bg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Powerpoint_Border_PNG_Image {
-            get {
-                object obj = ResourceManager.GetObject("Powerpoint-Border-PNG-Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

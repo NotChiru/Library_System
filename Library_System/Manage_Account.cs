@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Library_System
 {
-    public partial class Book_Menu : Form
+    public partial class Manage_Account : Form
     {
-        public Book_Menu()
+        public Manage_Account()
         {
             InitializeComponent();
         }
-
-        private void btn_bookDetails_Click_1(object sender, EventArgs e)
+        AddAccount_Form addAccountForm = new AddAccount_Form();
+        private void btn_addAccount_Click(object sender, EventArgs e)
         {
-            ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
-            viewBooks_Form.ShowDialog();
+            addAccountForm.ShowDialog();
         }
     }
 }

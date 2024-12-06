@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Logout = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_manageAccounts = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_books = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_manageBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_bookReports = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_library = new System.Windows.Forms.ToolStripMenuItem();
             this.Account_Details = new System.Windows.Forms.LinkLabel();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -55,13 +55,13 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem6,
-            this.toolStripMenuItem7,
+            this.Logout,
             this.toolStripMenuItem8,
-            this.toolStripMenuItem3,
+            this.menu_manageAccounts,
             this.toolStripMenuItem1,
-            this.menu_books,
+            this.menu_manageBooks,
             this.toolStripMenuItem4,
-            this.toolStripMenuItem2,
+            this.menu_bookReports,
             this.toolStripMenuItem5,
             this.menu_library});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
@@ -74,18 +74,6 @@
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DarkGray;
-            this.toolStripMenuItem3.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
-            this.toolStripMenuItem3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.toolStripMenuItem3.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem3.Text = "Manage Accounts";
-            // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -95,6 +83,42 @@
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(240, 28);
             this.toolStripMenuItem6.Text = "                                            ";
+            // 
+            // Logout
+            // 
+            this.Logout.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Logout.BackColor = System.Drawing.Color.Gray;
+            this.Logout.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
+            this.Logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logout.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout.ForeColor = System.Drawing.Color.White;
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(240, 28);
+            this.Logout.Text = "LOG OUT";
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem8.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem8.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem8.Text = "                                            ";
+            // 
+            // menu_manageAccounts
+            // 
+            this.menu_manageAccounts.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.menu_manageAccounts.BackColor = System.Drawing.Color.DarkGray;
+            this.menu_manageAccounts.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
+            this.menu_manageAccounts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.menu_manageAccounts.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_manageAccounts.ForeColor = System.Drawing.Color.White;
+            this.menu_manageAccounts.Name = "menu_manageAccounts";
+            this.menu_manageAccounts.Size = new System.Drawing.Size(240, 28);
+            this.menu_manageAccounts.Text = "Manage Accounts";
+            this.menu_manageAccounts.Click += new System.EventHandler(this.menu_manageAccounts_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -106,18 +130,18 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 28);
             this.toolStripMenuItem1.Text = "                               ";
             // 
-            // menu_books
+            // menu_manageBooks
             // 
-            this.menu_books.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.menu_books.BackColor = System.Drawing.Color.DarkGray;
-            this.menu_books.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
-            this.menu_books.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.menu_books.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu_books.ForeColor = System.Drawing.Color.White;
-            this.menu_books.Name = "menu_books";
-            this.menu_books.Size = new System.Drawing.Size(240, 28);
-            this.menu_books.Text = "Manage Books";
-            this.menu_books.Click += new System.EventHandler(this.menu_books_Click_1);
+            this.menu_manageBooks.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.menu_manageBooks.BackColor = System.Drawing.Color.DarkGray;
+            this.menu_manageBooks.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
+            this.menu_manageBooks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.menu_manageBooks.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_manageBooks.ForeColor = System.Drawing.Color.White;
+            this.menu_manageBooks.Name = "menu_manageBooks";
+            this.menu_manageBooks.Size = new System.Drawing.Size(240, 28);
+            this.menu_manageBooks.Text = "Manage Books";
+            this.menu_manageBooks.Click += new System.EventHandler(this.menu_books_Click_1);
             // 
             // toolStripMenuItem4
             // 
@@ -129,19 +153,20 @@
             this.toolStripMenuItem4.Size = new System.Drawing.Size(240, 28);
             this.toolStripMenuItem4.Text = "                               ";
             // 
-            // toolStripMenuItem2
+            // menu_bookReports
             // 
-            this.toolStripMenuItem2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.DarkGray;
-            this.toolStripMenuItem2.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
-            this.toolStripMenuItem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.toolStripMenuItem2.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.White;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem2.Text = "Book Reports";
+            this.menu_bookReports.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.menu_bookReports.BackColor = System.Drawing.Color.DarkGray;
+            this.menu_bookReports.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
+            this.menu_bookReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.menu_bookReports.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_bookReports.ForeColor = System.Drawing.Color.White;
+            this.menu_bookReports.ImageTransparentColor = System.Drawing.Color.White;
+            this.menu_bookReports.Name = "menu_bookReports";
+            this.menu_bookReports.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.menu_bookReports.Size = new System.Drawing.Size(240, 28);
+            this.menu_bookReports.Text = "Book Reports";
+            this.menu_bookReports.Click += new System.EventHandler(this.menu_bookReports_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -166,6 +191,7 @@
             this.menu_library.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.menu_library.Size = new System.Drawing.Size(240, 28);
             this.menu_library.Text = "Library Menu";
+            this.menu_library.Click += new System.EventHandler(this.menu_library_Click);
             // 
             // Account_Details
             // 
@@ -179,39 +205,6 @@
             this.Account_Details.Text = "View Account";
             this.Account_Details.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Account_Details_LinkClicked);
             // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem7.BackColor = System.Drawing.Color.DarkGray;
-            this.toolStripMenuItem7.BackgroundImage = global::Library_System.Properties.Resources.black_151767_1280;
-            this.toolStripMenuItem7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.toolStripMenuItem7.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem7.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem7.Text = "LOG OUT";
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem8.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem8.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem8.Text = "                                            ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox2.BackgroundImage = global::Library_System.Properties.Resources.blackBorder_transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -224,6 +217,17 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "Archille";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox2.BackgroundImage = global::Library_System.Properties.Resources.blackBorder_transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            // 
             // Library_Menu_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,10 +237,11 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Account_Details);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
             this.Name = "Library_Menu_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Library_Menu_Admin";
+            this.Text = "Library Menu Admin";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -248,16 +253,16 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem menu_manageAccounts;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem menu_books;
+        private System.Windows.Forms.ToolStripMenuItem menu_manageBooks;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem menu_library;
         private System.Windows.Forms.LinkLabel Account_Details;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem menu_bookReports;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem Logout;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label12;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Library_System
 {
-    public partial class ViewBooks_Form : Form
+    public partial class AddAccount_Form : Form
     {
-        public ViewBooks_Form()
+        public AddAccount_Form()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace Library_System
 
         }
 
-        private void btn_borrow_Click(object sender, EventArgs e)
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }

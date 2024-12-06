@@ -1,6 +1,6 @@
 ﻿namespace Library_System
 {
-    partial class ViewBooks_Form
+    partial class AddBooks_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -32,33 +32,32 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_dateReturn = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_fee = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_copyright = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_refNo = new System.Windows.Forms.TextBox();
-            this.txt_bookType = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_borrow = new System.Windows.Forms.Button();
-            this.txt_category = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_price = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_qty = new System.Windows.Forms.NumericUpDown();
-            this.txt_author = new System.Windows.Forms.TextBox();
+            this.txt_type = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
-            this.txt_title = new System.Windows.Forms.TextBox();
+            this.txt_desc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_fee = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_dateAdded = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_dateReturn = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,12 +92,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(332, 4);
+            this.label1.Location = new System.Drawing.Point(367, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 58);
+            this.label1.Size = new System.Drawing.Size(229, 58);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Book Details";
+            this.label1.Text = "Add Book";
             this.label1.UseWaitCursor = true;
             // 
             // panel1
@@ -106,29 +105,28 @@
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.txt_dateReturn);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.txt_dateAdded);
+            this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txt_fee);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txt_copyright);
+            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txt_refNo);
-            this.panel1.Controls.Add(this.txt_bookType);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btn_borrow);
-            this.panel1.Controls.Add(this.txt_category);
+            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.txt_price);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.txt_qty);
-            this.panel1.Controls.Add(this.txt_author);
+            this.panel1.Controls.Add(this.txt_type);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.txt_title);
+            this.panel1.Controls.Add(this.txt_desc);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(-3, 110);
@@ -137,6 +135,67 @@
             this.panel1.Size = new System.Drawing.Size(917, 432);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txt_dateReturn
+            // 
+            this.txt_dateReturn.Enabled = false;
+            this.txt_dateReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txt_dateReturn.Location = new System.Drawing.Point(521, 366);
+            this.txt_dateReturn.Name = "txt_dateReturn";
+            this.txt_dateReturn.Size = new System.Drawing.Size(180, 24);
+            this.txt_dateReturn.TabIndex = 49;
+            this.txt_dateReturn.Text = "After 14 Days";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(420, 370);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(95, 17);
+            this.label13.TabIndex = 48;
+            this.label13.Text = "Date Return:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.textBox5.Location = new System.Drawing.Point(481, 234);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(212, 24);
+            this.textBox5.TabIndex = 47;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(390, 238);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(92, 17);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Date Added:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(395, 339);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(126, 17);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "Borrowing Fee: ₱";
+            // 
+            // txt_fee
+            // 
+            this.txt_fee.Enabled = false;
+            this.txt_fee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txt_fee.Location = new System.Drawing.Point(521, 336);
+            this.txt_fee.Name = "txt_fee";
+            this.txt_fee.Size = new System.Drawing.Size(64, 24);
+            this.txt_fee.TabIndex = 44;
+            this.txt_fee.Text = "100";
             // 
             // label6
             // 
@@ -149,14 +208,13 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "Copyright:";
             // 
-            // txt_copyright
+            // textBox4
             // 
-            this.txt_copyright.Enabled = false;
-            this.txt_copyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_copyright.Location = new System.Drawing.Point(706, 297);
-            this.txt_copyright.Name = "txt_copyright";
-            this.txt_copyright.Size = new System.Drawing.Size(180, 24);
-            this.txt_copyright.TabIndex = 41;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.textBox4.Location = new System.Drawing.Point(706, 297);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(180, 24);
+            this.textBox4.TabIndex = 41;
             // 
             // label5
             // 
@@ -169,23 +227,22 @@
             this.label5.TabIndex = 39;
             this.label5.Text = "Reference No.:";
             // 
-            // txt_refNo
+            // textBox2
             // 
-            this.txt_refNo.Enabled = false;
-            this.txt_refNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_refNo.Location = new System.Drawing.Point(417, 297);
-            this.txt_refNo.Name = "txt_refNo";
-            this.txt_refNo.Size = new System.Drawing.Size(276, 24);
-            this.txt_refNo.TabIndex = 40;
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.textBox2.Location = new System.Drawing.Point(417, 297);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(276, 24);
+            this.textBox2.TabIndex = 40;
             // 
-            // txt_bookType
+            // textBox1
             // 
-            this.txt_bookType.Enabled = false;
-            this.txt_bookType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_bookType.Location = new System.Drawing.Point(481, 188);
-            this.txt_bookType.Name = "txt_bookType";
-            this.txt_bookType.Size = new System.Drawing.Size(212, 24);
-            this.txt_bookType.TabIndex = 38;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.textBox1.Location = new System.Drawing.Point(481, 188);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(212, 24);
+            this.textBox1.TabIndex = 38;
             // 
             // label4
             // 
@@ -201,24 +258,23 @@
             // btn_borrow
             // 
             this.btn_borrow.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrow.ForeColor = System.Drawing.Color.Black;
-            this.btn_borrow.Location = new System.Drawing.Point(771, 395);
+            this.btn_borrow.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btn_borrow.Location = new System.Drawing.Point(771, 370);
             this.btn_borrow.Name = "btn_borrow";
             this.btn_borrow.Size = new System.Drawing.Size(127, 30);
             this.btn_borrow.TabIndex = 33;
-            this.btn_borrow.Text = "BORROW BOOK";
+            this.btn_borrow.Text = "ADD BOOK";
             this.btn_borrow.UseVisualStyleBackColor = true;
             this.btn_borrow.Click += new System.EventHandler(this.btn_borrow_Click);
             // 
-            // txt_category
+            // textBox3
             // 
-            this.txt_category.Enabled = false;
-            this.txt_category.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_category.Location = new System.Drawing.Point(481, 142);
-            this.txt_category.Name = "txt_category";
-            this.txt_category.Size = new System.Drawing.Size(212, 24);
-            this.txt_category.TabIndex = 32;
-            this.txt_category.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.textBox3.Location = new System.Drawing.Point(481, 142);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(212, 24);
+            this.textBox3.TabIndex = 32;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label16
             // 
@@ -233,7 +289,6 @@
             // 
             // txt_price
             // 
-            this.txt_price.Enabled = false;
             this.txt_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_price.Location = new System.Drawing.Point(814, 188);
             this.txt_price.Name = "txt_price";
@@ -253,7 +308,6 @@
             // 
             // txt_qty
             // 
-            this.txt_qty.Enabled = false;
             this.txt_qty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_qty.Location = new System.Drawing.Point(814, 143);
             this.txt_qty.Minimum = new decimal(new int[] {
@@ -270,14 +324,13 @@
             0,
             0});
             // 
-            // txt_author
+            // txt_type
             // 
-            this.txt_author.Enabled = false;
-            this.txt_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_author.Location = new System.Drawing.Point(481, 100);
-            this.txt_author.Name = "txt_author";
-            this.txt_author.Size = new System.Drawing.Size(405, 24);
-            this.txt_author.TabIndex = 27;
+            this.txt_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txt_type.Location = new System.Drawing.Point(481, 100);
+            this.txt_type.Name = "txt_type";
+            this.txt_type.Size = new System.Drawing.Size(405, 24);
+            this.txt_type.TabIndex = 27;
             // 
             // label11
             // 
@@ -325,22 +378,20 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "Book Title:";
             // 
-            // txt_title
+            // txt_desc
             // 
-            this.txt_title.Enabled = false;
-            this.txt_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_title.Location = new System.Drawing.Point(481, 55);
-            this.txt_title.Name = "txt_title";
-            this.txt_title.Size = new System.Drawing.Size(405, 24);
-            this.txt_title.TabIndex = 15;
-            this.txt_title.Text = "Steven Universe";
+            this.txt_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txt_desc.Location = new System.Drawing.Point(481, 55);
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(405, 24);
+            this.txt_desc.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(368, 301);
+            this.label2.Location = new System.Drawing.Point(359, 386);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(558, 31);
             this.label2.TabIndex = 34;
@@ -358,88 +409,14 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "__________________________________";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.LightGray;
-            this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(574, 331);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 22);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Book Borrowing";
-            // 
-            // txt_fee
-            // 
-            this.txt_fee.Enabled = false;
-            this.txt_fee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_fee.Location = new System.Drawing.Point(527, 365);
-            this.txt_fee.Name = "txt_fee";
-            this.txt_fee.Size = new System.Drawing.Size(64, 24);
-            this.txt_fee.TabIndex = 44;
-            this.txt_fee.Text = "100";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(401, 368);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 17);
-            this.label8.TabIndex = 45;
-            this.label8.Text = "Borrowing Fee: ₱";
-            // 
-            // txt_dateAdded
-            // 
-            this.txt_dateAdded.Enabled = false;
-            this.txt_dateAdded.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_dateAdded.Location = new System.Drawing.Point(481, 234);
-            this.txt_dateAdded.Name = "txt_dateAdded";
-            this.txt_dateAdded.Size = new System.Drawing.Size(212, 24);
-            this.txt_dateAdded.TabIndex = 47;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(390, 238);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 17);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Date Added:";
-            // 
-            // txt_dateReturn
-            // 
-            this.txt_dateReturn.Enabled = false;
-            this.txt_dateReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_dateReturn.Location = new System.Drawing.Point(516, 398);
-            this.txt_dateReturn.Name = "txt_dateReturn";
-            this.txt_dateReturn.Size = new System.Drawing.Size(233, 24);
-            this.txt_dateReturn.TabIndex = 49;
-            this.txt_dateReturn.Text = "After 14 Days";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(420, 402);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(95, 17);
-            this.label13.TabIndex = 48;
-            this.label13.Text = "Date Return:";
-            // 
-            // ViewBooks_Form
+            // AddBooks_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 552);
             this.Controls.Add(this.panel3);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "ViewBooks_Form";
+            this.Name = "AddBooks_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewBooks_Form";
             this.panel3.ResumeLayout(false);
@@ -460,29 +437,28 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_borrow;
-        private System.Windows.Forms.TextBox txt_category;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txt_price;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_author;
+        private System.Windows.Forms.TextBox txt_type;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txt_title;
+        private System.Windows.Forms.TextBox txt_desc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_bookType;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown txt_qty;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_copyright;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_refNo;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_fee;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_dateAdded;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_dateReturn;
         private System.Windows.Forms.Label label13;

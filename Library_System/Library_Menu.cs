@@ -18,6 +18,7 @@ namespace Library_System
         }
         Book_Menu books_Menu = new Book_Menu();
         Return_Book return_Book = new Return_Book();
+        ViewAccounts_Form viewAccounts_Form = new ViewAccounts_Form();
 
         void hide_all()
         {
@@ -38,15 +39,10 @@ namespace Library_System
 
         private void menu_library_Click(object sender, EventArgs e)
         {
-            
+            hide_all();
         }
 
         private void label12_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Account_Details_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             
         }
@@ -56,6 +52,24 @@ namespace Library_System
             hide_all();
             return_Book.MdiParent = this;
             return_Book.Show();
+        }
+
+        private void Account_Details_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            viewAccounts_Form.ShowDialog();
+        }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to Logout?", "Confirmation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
+            }
+            else { }
+
         }
     }
 }

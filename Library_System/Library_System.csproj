@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Reports.Designer.cs">
+      <DependentUpon>Book_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Account.Designer.cs">
+      <DependentUpon>Manage_Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="Return_Book.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,12 +96,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddAccount_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAccount_Form.Designer.cs">
+      <DependentUpon>AddAccount_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewManageAccounts_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewManageAccounts_Form.Designer.cs">
+      <DependentUpon>ViewManageAccounts_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAccounts_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAccounts_Form.Designer.cs">
+      <DependentUpon>ViewAccounts_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBooks_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBooks_Form.Designer.cs">
+      <DependentUpon>AddBooks_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewBooks_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewBooks_Form.Designer.cs">
       <DependentUpon>ViewBooks_Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Book_Reports.resx">
+      <DependentUpon>Book_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Account.resx">
+      <DependentUpon>Manage_Account.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Return_Book.resx">
       <DependentUpon>Return_Book.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +160,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="AddAccount_Form.resx">
+      <DependentUpon>AddAccount_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewManageAccounts_Form.resx">
+      <DependentUpon>ViewManageAccounts_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAccounts_Form.resx">
+      <DependentUpon>ViewAccounts_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBooks_Form.resx">
+      <DependentUpon>AddBooks_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewBooks_Form.resx">
       <DependentUpon>ViewBooks_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,31 +189,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\chasing-sunsets-rw-2880x1800.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\black_border.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackBorder_transparent.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\border transparent.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Frame_Border_Transparent_Image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Powerpoint-Border-PNG-Image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Black-Square-Frame-PNG-Clipart-Background.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\black-151767_1280.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\library_bg.jpg" />
+    <Content Include="Resources\blackBorder_transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

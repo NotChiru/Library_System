@@ -17,30 +17,18 @@ namespace Library_System
             InitializeComponent();
         }
 
-        private void bookTitleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_bookDetails_Click_1(object sender, EventArgs e)
         {
-            ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
-            viewBooks_Form.ShowDialog();
+            string return_message = "Do you want to return this book? \nTitle: JHEBI'S ADVENTURE WITH HIS UMBRELLA";
+            DialogResult result = MessageBox.Show(return_message, "Confirmation", MessageBoxButtons.YesNoCancel);
+            if (result == DialogResult.Yes)
+            {
+                
+            }
+            else if (result == DialogResult.No)
+            {
+                
+            }
         }
     }
 }
