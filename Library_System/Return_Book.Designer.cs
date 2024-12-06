@@ -1,6 +1,6 @@
 ﻿namespace Library_System
 {
-    partial class Book_Menu
+    partial class Return_Book
     {
         /// <summary>
         /// Required designer variable.
@@ -89,9 +89,9 @@
             this.label1.Location = new System.Drawing.Point(319, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 58);
+            this.label1.Size = new System.Drawing.Size(292, 58);
             this.label1.TabIndex = 0;
-            this.label1.Text = "View Books";
+            this.label1.Text = "Return Book";
             this.label1.UseWaitCursor = true;
             // 
             // comboBox1
@@ -142,7 +142,7 @@
             this.btn_bookDetails.Name = "btn_bookDetails";
             this.btn_bookDetails.Size = new System.Drawing.Size(163, 26);
             this.btn_bookDetails.TabIndex = 34;
-            this.btn_bookDetails.Text = "VIEW BOOK DETAIL";
+            this.btn_bookDetails.Text = "RETURN BOOK";
             this.btn_bookDetails.UseVisualStyleBackColor = true;
             this.btn_bookDetails.Click += new System.EventHandler(this.btn_bookDetails_Click_1);
             // 
@@ -158,7 +158,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(861, 328);
             this.dataGridView1.TabIndex = 0;
             // 
-            // Book_Menu
+            // Return_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +166,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Book_Menu";
+            this.Name = "Return_Book";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book_Menu";
             this.panel1.ResumeLayout(false);

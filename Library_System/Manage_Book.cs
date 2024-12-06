@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Library_System
 {
-    public partial class Book_Menu : Form
+    public partial class Manage_Book : Form
     {
-        public Book_Menu()
+        public Manage_Book()
         {
             InitializeComponent();
+        }
+
+        private void menu_books_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void bookTitleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,7 +42,7 @@ namespace Library_System
 
         }
 
-        private void btn_bookDetails_Click_1(object sender, EventArgs e)
+        private void btn_bookDetails_Click(object sender, EventArgs e)
         {
             ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
             viewBooks_Form.ShowDialog();
