@@ -22,5 +22,21 @@ namespace Library_System
             ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
             viewBooks_Form.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void onready(object sender, EventArgs e)
+        {
+            database.query("select * from bookstable");
+            Gvar.Book_Menu_Table= database.returnTable;
+        }
+
+        private void _process_Tick(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Gvar.Book_Menu_Table;
+        }
     }
 }

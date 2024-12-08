@@ -25,22 +25,34 @@ namespace Library_System
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if (txt_email.Text == "admin")
-            {
-                this.Hide();
-                library_Menu_Admin.ShowDialog();
+            database.query("select password from member where address = '" + txt_email.Text + "'");
+            if (database.returnSingle == pwBox.Text) {
+                database.query("select member from member where address = '" + txt_email.Text + "'");
+                if (database.returnSingle == "Admin")
+                {
+                    this.Hide();
+                    library_Menu_Admin.ShowDialog();
+                }
+                else
+                {
+
+                    this.Hide();
+                    library_Menu.ShowDialog();
+                }
             }
-            else
-            {
-                
-                this.Hide();
-                library_Menu.ShowDialog();
-            }
+            else { MessageBox.Show("Incorrect Email or Password!"); }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_showpass_Click(object sender, EventArgs e)
+        {
+            if (pwBox.PasswordChar != '\0') { pwBox.PasswordChar = '\0'; }
+
+            else { pwBox.PasswordChar = '*'; }
         }
     }
 }

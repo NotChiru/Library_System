@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_addAccount = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.emBox = new System.Windows.Forms.TextBox();
             this.btn_accountDetails = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this._process = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -159,6 +161,11 @@
             this.dataGridView1.Size = new System.Drawing.Size(861, 328);
             this.dataGridView1.TabIndex = 0;
             // 
+            // _process
+            // 
+            this._process.Enabled = true;
+            this._process.Tick += new System.EventHandler(this._process_Tick);
+            // 
             // Manage_Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +177,7 @@
             this.Name = "Manage_Account";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book_Menu";
+            this.Load += new System.EventHandler(this.onready);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -191,5 +199,6 @@
         private System.Windows.Forms.TextBox emBox;
         private System.Windows.Forms.Button btn_accountDetails;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Timer _process;
     }
 }

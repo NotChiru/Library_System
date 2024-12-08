@@ -89,6 +89,7 @@
             this.btn_showpass.TabIndex = 25;
             this.btn_showpass.Text = "👁️";
             this.btn_showpass.UseVisualStyleBackColor = true;
+            this.btn_showpass.Click += new System.EventHandler(this.btn_showpass_Click);
             // 
             // label2
             // 

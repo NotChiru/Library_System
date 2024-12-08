@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -35,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.emBox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this._process = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -119,6 +121,11 @@
             this.dataGridView1.Size = new System.Drawing.Size(859, 362);
             this.dataGridView1.TabIndex = 0;
             // 
+            // _process
+            // 
+            this._process.Enabled = true;
+            this._process.Tick += new System.EventHandler(this._process_Tick);
+            // 
             // Book_Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +137,7 @@
             this.Name = "Book_Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book_Menu";
+            this.Load += new System.EventHandler(this.onready);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -148,5 +156,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox emBox;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Timer _process;
     }
 }

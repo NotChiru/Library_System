@@ -28,5 +28,11 @@ namespace Library_System
         {
             viewBooks_Form.ShowDialog();
         }
+
+        private void onready(object sender, EventArgs e)
+        {
+            database.query("select * from bookstable");
+            dataGridView1.DataSource = database.returnTable;
+        }
     }
 }
