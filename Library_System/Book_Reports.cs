@@ -55,7 +55,7 @@ namespace Library_System
 
         private void onready(object sender, EventArgs e)
         {
-            database.query("select * from member");
+            database.query("select * from manage_borrow");
             Gvar.Account_Manage_Table = database.returnTable;
         }
     }
