@@ -27,6 +27,7 @@ namespace Library_System
         public static DataTable Account_Manage_Table = new DataTable();
         public static DataTable Book_Menu_Table = new DataTable();
         public static DataTable Book_Report_Table = new DataTable();
+        public static String 
         
     }
 
@@ -39,13 +40,14 @@ namespace Library_System
         static MySqlCommand cmd = new MySqlCommand();//DONT TOUCH THIS BTW
         static MySqlConnection con = new MySqlConnection(database_properties);
 
-        public static String returnSingle = "null";
+        public static bool DEBUG_MODE_IS_ENABLED = false;
+        public static String returnSingle = null;
         public static String[] returnColumn = new string[0];
         public static DataTable returnTable = new DataTable();
         static bool isConnectionOpened = false;
 
 
-        public static void query(string SQLCOMMAND)//Performs a commmand through a string
+        public static bool query(string SQLCOMMAND)//Performs a commmand through a string
         {
 
             try
@@ -64,7 +66,7 @@ namespace Library_System
 
                 try
                 {
-                    returnSingle = "null";
+                    returnSingle = null;
                     returnColumn = new string[0];
                     returnTable = new DataTable();
                     int index = 0;
@@ -81,24 +83,32 @@ namespace Library_System
                     returnColumn = templar;
 
                     table_scanner.Close();
-                    returnSingle = returnColumn[0];
+
+                    if (returnColumn.Length != 0)
+                    {
+                        returnSingle = returnColumn[0];
+                    }
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(returnTable);
+                    return true;
                 }
-                catch (Exception e) { MessageBox.Show(e.ToString()); }
+                catch (Exception e) { if (DEBUG_MODE_IS_ENABLED) { MessageBox.Show(e.ToString()); return false; } }
 
 
                 
             }
             catch (Exception e)
             {
-                returnTable = new DataTable();
+                returnSingle = null;
                 returnColumn = new string[0];
-                returnSingle = "null";
-
-                MessageBox.Show(e.ToString());
+                returnTable = new DataTable();
+                
+                if (DEBUG_MODE_IS_ENABLED) { MessageBox.Show(e.ToString()); }
+                return false;
             }
+
+            return false;
         }
 
     }

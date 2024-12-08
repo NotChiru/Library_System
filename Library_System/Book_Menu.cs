@@ -32,6 +32,7 @@ namespace Library_System
         {
             database.query("select * from bookstable");
             Gvar.Book_Menu_Table= database.returnTable;
+            
         }
 
         private void _process_Tick(object sender, EventArgs e)

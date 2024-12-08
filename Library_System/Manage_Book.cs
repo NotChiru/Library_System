@@ -12,6 +12,8 @@ namespace Library_System
 {
     public partial class Manage_Book : Form
     {
+
+
         public Manage_Book()
         {
             InitializeComponent();
@@ -33,6 +35,23 @@ namespace Library_System
         {
             database.query("select * from bookstable");
             dataGridView1.DataSource = database.returnTable;
+        }
+
+        private void searchfilter(object sender, EventArgs e)
+        {
+            if(database.query("select * from bookstable where "+yfilter.Text+" = '" + emBox.Text + "'") && yfilter.Text.Length != 0 && emBox.Text.Length != 0) 
+            { dataGridView1.DataSource = database.returnTable; }
+            else
+            {
+                database.query("select * from bookstable");
+                dataGridView1.DataSource = database.returnTable;
+            }
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

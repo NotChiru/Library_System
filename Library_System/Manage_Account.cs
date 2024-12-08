@@ -12,11 +12,14 @@ namespace Library_System
 {
     public partial class Manage_Account : Form
     {
+        String selectedID = null;
+        AddAccount_Form addAccountForm = new AddAccount_Form();
+        Manage_Account manageaccount = new Manage_Account();
         public Manage_Account()
         {
             InitializeComponent();
         }
-        AddAccount_Form addAccountForm = new AddAccount_Form();
+        
         private void btn_addAccount_Click(object sender, EventArgs e)
         {
             addAccountForm.ShowDialog();
@@ -31,6 +34,29 @@ namespace Library_System
         private void _process_Tick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Gvar.Account_Manage_Table;
+        }
+
+        private void btn_accountDetails_Click(object sender, EventArgs e)
+        {
+            if(selectedID != null)
+            {
+                manageaccount.ShowDialog();
+            } else { MessageBox.Show("No Accounts Selected"); }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                if (row != null)
+                {
+                    selectedID = row.Cells["member_id"].Value.ToString();
+
+                }
+            }
+
         }
     }
 }

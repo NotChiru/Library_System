@@ -148,6 +148,7 @@
             this.btn_accountDetails.TabIndex = 34;
             this.btn_accountDetails.Text = "VIEW ACCOUNT DETAIL";
             this.btn_accountDetails.UseVisualStyleBackColor = true;
+            this.btn_accountDetails.Click += new System.EventHandler(this.btn_accountDetails_Click);
             // 
             // dataGridView1
             // 
@@ -160,6 +161,7 @@
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(861, 328);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // _process
             // 

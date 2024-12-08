@@ -71,5 +71,15 @@ namespace Library_System
         {
             hide_all();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            database.DEBUG_MODE_IS_ENABLED = checkBox1.Checked;
+        }
+
+        private void onready(object sender, EventArgs e)
+        {
+            checkBox1.Checked = database.DEBUG_MODE_IS_ENABLED;
+        }
     }
 }
