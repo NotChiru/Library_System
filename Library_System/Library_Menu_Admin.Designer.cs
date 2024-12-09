@@ -40,11 +40,10 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_library = new System.Windows.Forms.ToolStripMenuItem();
             this.Account_Details = new System.Windows.Forms.LinkLabel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.memidLabel = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -198,36 +197,13 @@
             // 
             this.Account_Details.AutoSize = true;
             this.Account_Details.BackColor = System.Drawing.Color.LightGray;
-            this.Account_Details.Location = new System.Drawing.Point(91, 50);
+            this.Account_Details.Location = new System.Drawing.Point(21, 117);
             this.Account_Details.Name = "Account_Details";
             this.Account_Details.Size = new System.Drawing.Size(73, 13);
             this.Account_Details.TabIndex = 21;
             this.Account_Details.TabStop = true;
             this.Account_Details.Text = "View Account";
             this.Account_Details.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Account_Details_LinkClicked);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.LightGray;
-            this.label12.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(88, 25);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(90, 21);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Archille";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox2.BackgroundImage = global::Library_System.Properties.Resources.blackBorder_transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
             // 
             // checkBox1
             // 
@@ -241,14 +217,36 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // memidLabel
+            // 
+            this.memidLabel.AutoSize = true;
+            this.memidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memidLabel.Location = new System.Drawing.Point(4, 48);
+            this.memidLabel.Name = "memidLabel";
+            this.memidLabel.Size = new System.Drawing.Size(51, 20);
+            this.memidLabel.TabIndex = 31;
+            this.memidLabel.Text = "label1";
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.BackColor = System.Drawing.Color.LightGray;
+            this.NameLabel.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.ForeColor = System.Drawing.Color.Black;
+            this.NameLabel.Location = new System.Drawing.Point(4, 9);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(90, 21);
+            this.NameLabel.TabIndex = 30;
+            this.NameLabel.Text = "Archille";
+            // 
             // Library_Menu_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 552);
+            this.Controls.Add(this.memidLabel);
+            this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Account_Details);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -257,9 +255,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Library Menu Admin";
             this.Load += new System.EventHandler(this.onready);
+            this.Shown += new System.EventHandler(this.onready);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,8 +277,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem Logout;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label memidLabel;
+        private System.Windows.Forms.Label NameLabel;
     }
 }

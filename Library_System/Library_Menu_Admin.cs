@@ -12,6 +12,7 @@ namespace Library_System
 {
     public partial class Library_Menu_Admin : Form
     {
+        errorlogger errorlogger = new errorlogger();
         public Library_Menu_Admin()
         {
             InitializeComponent();
@@ -60,6 +61,7 @@ namespace Library_System
             DialogResult result = MessageBox.Show("Are you sure you want to Logout?", "Confirmation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
+                Gvar.CurrentUserIsAdmin = false;
                 this.Hide();
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
@@ -79,7 +81,15 @@ namespace Library_System
 
         private void onready(object sender, EventArgs e)
         {
+
             checkBox1.Checked = database.DEBUG_MODE_IS_ENABLED;
+            database.query("select memname from member where member_id = '" + Gvar.Current_User_ID + "'");
+            NameLabel.Text = database.returnSingle;
+
+            database.query("SELECT mb.borrow_token, b.ReferenceNumber, b.BookTitle, mb.fee, mb.date_acquire AS DateAcquired, mb.date_return AS ReturnDate FROM manage_borrow mb INNER JOIN bookstable b ON mb.book_code = b.ReferenceNumber WHERE mb.memb_code = '" + Gvar.Current_User_ID + "' and mb.action = 'Book Borrowed' "); Gvar.Borrowed_books_local_table = database.returnTable;
+
+
+            memidLabel.Text = Gvar.Current_User_ID;
         }
     }
 }

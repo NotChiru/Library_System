@@ -53,7 +53,7 @@ namespace Library_System
 
                 if (row != null)
                 {
-                    selectedID = row.Cells["member_id"].Value.ToString();
+                    Gvar.Accountmanager_selectedID = row.Cells["member_id"].Value.ToString();
 
                 }
             }

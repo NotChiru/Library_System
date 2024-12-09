@@ -32,17 +32,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_accType = new System.Windows.Forms.TextBox();
+            this.savedata = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_gender = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_totalFee = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_accNo = new System.Windows.Forms.TextBox();
-            this.txt_address = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txt_bday = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
@@ -96,17 +94,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Controls.Add(this.txt_accType);
+            this.panel1.Controls.Add(this.savedata);
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txt_gender);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txt_totalFee);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txt_accNo);
-            this.panel1.Controls.Add(this.txt_address);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txt_bday);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.txt_email);
@@ -123,52 +119,54 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // txt_accType
+            // savedata
             // 
-            this.txt_accType.Enabled = false;
-            this.txt_accType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_accType.Location = new System.Drawing.Point(417, 245);
-            this.txt_accType.Name = "txt_accType";
-            this.txt_accType.Size = new System.Drawing.Size(192, 24);
-            this.txt_accType.TabIndex = 53;
+            this.savedata.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savedata.Location = new System.Drawing.Point(414, 364);
+            this.savedata.Name = "savedata";
+            this.savedata.Size = new System.Drawing.Size(182, 53);
+            this.savedata.TabIndex = 55;
+            this.savedata.Text = "Save Data";
+            this.savedata.UseVisualStyleBackColor = true;
+            this.savedata.Click += new System.EventHandler(this.savedata_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Admin",
+            "Regular",
+            "Student"});
+            this.comboBox2.Location = new System.Drawing.Point(400, 202);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 54;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(710, 431);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 53;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(414, 225);
+            this.label9.Location = new System.Drawing.Point(397, 182);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 17);
             this.label9.TabIndex = 52;
             this.label9.Text = "Account Type:";
-            // 
-            // txt_gender
-            // 
-            this.txt_gender.Enabled = false;
-            this.txt_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_gender.Location = new System.Drawing.Point(768, 142);
-            this.txt_gender.Name = "txt_gender";
-            this.txt_gender.Size = new System.Drawing.Size(118, 24);
-            this.txt_gender.TabIndex = 51;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(699, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 17);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Gender:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(397, 369);
+            this.label8.Location = new System.Drawing.Point(397, 305);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(326, 17);
             this.label8.TabIndex = 45;
@@ -178,7 +176,7 @@
             // 
             this.txt_totalFee.Enabled = false;
             this.txt_totalFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_totalFee.Location = new System.Drawing.Point(729, 365);
+            this.txt_totalFee.Location = new System.Drawing.Point(729, 301);
             this.txt_totalFee.Name = "txt_totalFee";
             this.txt_totalFee.Size = new System.Drawing.Size(157, 24);
             this.txt_totalFee.TabIndex = 44;
@@ -201,7 +199,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(414, 277);
+            this.label5.Location = new System.Drawing.Point(397, 238);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 17);
             this.label5.TabIndex = 39;
@@ -209,36 +207,14 @@
             // 
             // txt_accNo
             // 
-            this.txt_accNo.Enabled = false;
             this.txt_accNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_accNo.Location = new System.Drawing.Point(417, 297);
+            this.txt_accNo.Location = new System.Drawing.Point(400, 258);
             this.txt_accNo.Name = "txt_accNo";
             this.txt_accNo.Size = new System.Drawing.Size(469, 24);
             this.txt_accNo.TabIndex = 40;
             // 
-            // txt_address
-            // 
-            this.txt_address.Enabled = false;
-            this.txt_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_address.Location = new System.Drawing.Point(481, 188);
-            this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(405, 24);
-            this.txt_address.TabIndex = 38;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(406, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 17);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Address:";
-            // 
             // txt_bday
             // 
-            this.txt_bday.Enabled = false;
             this.txt_bday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_bday.Location = new System.Drawing.Point(481, 142);
             this.txt_bday.Name = "txt_bday";
@@ -259,7 +235,6 @@
             // 
             // txt_email
             // 
-            this.txt_email.Enabled = false;
             this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_email.Location = new System.Drawing.Point(448, 100);
             this.txt_email.Name = "txt_email";
@@ -288,6 +263,7 @@
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(366, 366);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label12
             // 
@@ -302,7 +278,6 @@
             // 
             // txt_name
             // 
-            this.txt_name.Enabled = false;
             this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_name.Location = new System.Drawing.Point(447, 55);
             this.txt_name.Name = "txt_name";
@@ -343,6 +318,8 @@
             this.Name = "ViewManageAccounts_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewBooks_Form";
+            this.Load += new System.EventHandler(this.ViewManageAccounts_Form_Load);
+            this.Shown += new System.EventHandler(this.onready);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -367,17 +344,15 @@
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_address;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_accNo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_totalFee;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_gender;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_accType;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button savedata;
     }
 }

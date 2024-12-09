@@ -104,6 +104,8 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(142, 32);
             this.comboBox1.TabIndex = 38;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.TextChanged += new System.EventHandler(this.Searchquery);
             // 
             // button3
             // 
@@ -135,6 +137,7 @@
             this.emBox.Name = "emBox";
             this.emBox.Size = new System.Drawing.Size(303, 35);
             this.emBox.TabIndex = 35;
+            this.emBox.TextChanged += new System.EventHandler(this.Searchquery);
             // 
             // btn_bookDetails
             // 

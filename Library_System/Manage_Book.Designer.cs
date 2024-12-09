@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_addBook = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -36,10 +37,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.yfilter = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.emBox = new System.Windows.Forms.TextBox();
             this.btn_bookDetails = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.process = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -143,6 +145,18 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(20, 73);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 36);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "🔍";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // emBox
             // 
             this.emBox.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,17 +191,10 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button2
+            // process
             // 
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(20, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 36);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "🔍";
-            this.button2.UseVisualStyleBackColor = true;
+            this.process.Enabled = true;
+            this.process.Tick += new System.EventHandler(this.process_Tick);
             // 
             // Manage_Book
             // 
@@ -224,5 +231,6 @@
         private System.Windows.Forms.Button btn_addBook;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer process;
     }
 }

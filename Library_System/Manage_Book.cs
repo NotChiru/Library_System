@@ -28,30 +28,55 @@ namespace Library_System
 
         private void btn_bookDetails_Click(object sender, EventArgs e)
         {
-            viewBooks_Form.ShowDialog();
+            if (Gvar.BookManager_SelectedID != null)
+            {
+                viewBooks_Form.ShowDialog();
+            } else { MessageBox.Show("No Books Selected!"); }
         }
 
         private void onready(object sender, EventArgs e)
         {
             database.query("select * from bookstable");
-            dataGridView1.DataSource = database.returnTable;
+            Gvar.Book_Menu_Table = database.returnTable;
+
+           
+            foreach(DataColumn i in Gvar.Book_Menu_Table.Columns)
+            {
+                yfilter.Items.Add(i.ColumnName);
+            }
         }
 
         private void searchfilter(object sender, EventArgs e)
         {
-            if(database.query("select * from bookstable where "+yfilter.Text+" = '" + emBox.Text + "'") && yfilter.Text.Length != 0 && emBox.Text.Length != 0) 
-            { dataGridView1.DataSource = database.returnTable; }
+            if(database.query("select * from bookstable where "+yfilter.Text+" like '%" + emBox.Text + "%' ") && yfilter.Text.Length != 0 && emBox.Text.Length != 0) 
+            { Gvar.Book_Menu_Table = database.returnTable; }
             else
             {
                 database.query("select * from bookstable");
-                dataGridView1.DataSource = database.returnTable;
+                Gvar.Book_Menu_Table = database.returnTable;
             }
             
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
 
+                if (row != null)
+                {
+                    Gvar.BookManager_SelectedID = row.Cells["referencenumber"].Value.ToString();
+
+                }
+            }
+        }
+
+        private void process_Tick(object sender, EventArgs e)
+        {
+
+
+            dataGridView1.DataSource = Gvar.Book_Menu_Table;
         }
     }
 }

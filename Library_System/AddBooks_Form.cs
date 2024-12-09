@@ -41,5 +41,10 @@ namespace Library_System
         {
 
         }
+
+        private void AddBooks_Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

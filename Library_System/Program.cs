@@ -24,10 +24,19 @@ namespace Library_System
 
     public static class Gvar
     {
+        public static String ErrorString = "///Error Logger/// \n\n\n";
+        public static bool CurrentUserIsAdmin = false;
+        public static String Current_User_ID = "";
         public static DataTable Account_Manage_Table = new DataTable();
         public static DataTable Book_Menu_Table = new DataTable();
         public static DataTable Book_Report_Table = new DataTable();
         public static String Accountmanager_selectedID = null;
+        public static String BookManager_SelectedID = null;
+        public static float DiscountAmount = 0.0F;
+        public static String DiscountType = "";
+        public static DataTable Borrowed_books_local_table = new DataTable();
+        public static String selected_books_to_return = null;
+        
 
 
     }
@@ -94,7 +103,7 @@ namespace Library_System
                     adapter.Fill(returnTable);
                     return true;
                 }
-                catch (Exception e) { if (DEBUG_MODE_IS_ENABLED) { MessageBox.Show(e.ToString()); return false; } }
+                catch (Exception e) { if(DEBUG_MODE_IS_ENABLED){ MessageBox.Show(e.ToString()); } return false; } 
 
 
                 
@@ -104,7 +113,7 @@ namespace Library_System
                 returnSingle = null;
                 returnColumn = new string[0];
                 returnTable = new DataTable();
-                
+
                 if (DEBUG_MODE_IS_ENABLED) { MessageBox.Show(e.ToString()); }
                 return false;
             }

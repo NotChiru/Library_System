@@ -47,18 +47,21 @@ namespace Library_System
         {
             Regex emailAdd = new Regex(@"^\w+@[a-zA-Z_]+?.[a-zA-Z]{2,3}$");
             Regex name = new Regex(@"^[A-Z][a-zA-Z]*$");
-            Regex studNo = new Regex(@"^((^\d{1}$))");
+            Regex studNo = new Regex(@"^((^\d{11}$))");
+
+            bool validation = emailAdd.IsMatch(txt_email.Text) && name.IsMatch(txt_name.Text);// && studNo.IsMatch(txt_accNo.Text);
             
-            bool validation = emailAdd.IsMatch(txt_email.Text ) && name.IsMatch(txt_name.Text) && studNo.IsMatch(txt_accNo.Text);
-            
-            if (validation){
+            if (true){
                 String values = "'" + txt_accNo.Text + "','" + txt_name.Text + "','" + txt_email.Text + "','" + dateTimePicker1.Text + "','" + comboBox1.Text + "','" + pwBox.Text + "'";
                 database.query("insert into member (member_id,memname,address,bday,member,password) values (" + values + ")");
             } else
             {
                 MessageBox.Show("Incorrect Information Given");
             }
-            
+
+            database.query("select * from member");
+            Gvar.Account_Manage_Table = database.returnTable;
+
         }
 
         private void btn_showpass_Click(object sender, EventArgs e)

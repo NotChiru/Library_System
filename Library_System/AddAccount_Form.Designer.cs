@@ -31,12 +31,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_createAcc = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_showpass = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pwBox = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cb_gender = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_accNo = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -47,10 +49,6 @@
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pwBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn_showpass = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,6 +91,18 @@
             this.label1.Text = "Create Account";
             this.label1.UseWaitCursor = true;
             // 
+            // btn_createAcc
+            // 
+            this.btn_createAcc.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_createAcc.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btn_createAcc.Location = new System.Drawing.Point(741, 19);
+            this.btn_createAcc.Name = "btn_createAcc";
+            this.btn_createAcc.Size = new System.Drawing.Size(157, 30);
+            this.btn_createAcc.TabIndex = 56;
+            this.btn_createAcc.Text = "CREATE ACCOUNT";
+            this.btn_createAcc.UseVisualStyleBackColor = true;
+            this.btn_createAcc.Click += new System.EventHandler(this.btn_createAcc_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
@@ -101,9 +111,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pwBox);
             this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.cb_gender);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txt_accNo);
             this.panel1.Controls.Add(this.label16);
@@ -121,17 +129,49 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btn_createAcc
+            // comboBox1
             // 
-            this.btn_createAcc.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_createAcc.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btn_createAcc.Location = new System.Drawing.Point(741, 19);
-            this.btn_createAcc.Name = "btn_createAcc";
-            this.btn_createAcc.Size = new System.Drawing.Size(157, 30);
-            this.btn_createAcc.TabIndex = 56;
-            this.btn_createAcc.Text = "CREATE ACCOUNT";
-            this.btn_createAcc.UseVisualStyleBackColor = true;
-            this.btn_createAcc.Click += new System.EventHandler(this.btn_createAcc_Click);
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Regular",
+            "Student"});
+            this.comboBox1.Location = new System.Drawing.Point(526, 277);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.TabIndex = 60;
+            // 
+            // btn_showpass
+            // 
+            this.btn_showpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_showpass.Location = new System.Drawing.Point(789, 163);
+            this.btn_showpass.Name = "btn_showpass";
+            this.btn_showpass.Size = new System.Drawing.Size(37, 35);
+            this.btn_showpass.TabIndex = 59;
+            this.btn_showpass.Text = "👁️";
+            this.btn_showpass.UseVisualStyleBackColor = true;
+            this.btn_showpass.Click += new System.EventHandler(this.btn_showpass_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(388, 146);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 17);
+            this.label7.TabIndex = 58;
+            this.label7.Text = "Password:";
+            // 
+            // pwBox
+            // 
+            this.pwBox.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pwBox.Location = new System.Drawing.Point(391, 163);
+            this.pwBox.Name = "pwBox";
+            this.pwBox.PasswordChar = '*';
+            this.pwBox.Size = new System.Drawing.Size(392, 35);
+            this.pwBox.TabIndex = 57;
             // 
             // dateTimePicker1
             // 
@@ -140,19 +180,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(405, 24);
             this.dateTimePicker1.TabIndex = 55;
-            // 
-            // cb_gender
-            // 
-            this.cb_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_gender.FormattingEnabled = true;
-            this.cb_gender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.cb_gender.Location = new System.Drawing.Point(482, 204);
-            this.cb_gender.Name = "cb_gender";
-            this.cb_gender.Size = new System.Drawing.Size(121, 26);
-            this.cb_gender.TabIndex = 54;
             // 
             // label9
             // 
@@ -164,17 +191,6 @@
             this.label9.Size = new System.Drawing.Size(106, 17);
             this.label9.TabIndex = 52;
             this.label9.Text = "Account Type:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(413, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 17);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Gender:";
             // 
             // label5
             // 
@@ -280,50 +296,6 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "__________________________________";
             // 
-            // pwBox
-            // 
-            this.pwBox.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pwBox.Location = new System.Drawing.Point(391, 163);
-            this.pwBox.Name = "pwBox";
-            this.pwBox.PasswordChar = '*';
-            this.pwBox.Size = new System.Drawing.Size(392, 35);
-            this.pwBox.TabIndex = 57;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(388, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 17);
-            this.label7.TabIndex = 58;
-            this.label7.Text = "Password:";
-            // 
-            // btn_showpass
-            // 
-            this.btn_showpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_showpass.Location = new System.Drawing.Point(789, 163);
-            this.btn_showpass.Name = "btn_showpass";
-            this.btn_showpass.Size = new System.Drawing.Size(37, 35);
-            this.btn_showpass.TabIndex = 59;
-            this.btn_showpass.Text = "👁️";
-            this.btn_showpass.UseVisualStyleBackColor = true;
-            this.btn_showpass.Click += new System.EventHandler(this.btn_showpass_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Regular",
-            "Student"});
-            this.comboBox1.Location = new System.Drawing.Point(526, 277);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 60;
-            // 
             // AddAccount_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -359,10 +331,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_accNo;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox cb_gender;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btn_createAcc;
         private System.Windows.Forms.Label label7;

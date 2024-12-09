@@ -27,15 +27,21 @@ namespace Library_System
         {
             database.query("select password from member where address = '" + txt_email.Text + "'");
             if (database.returnSingle == pwBox.Text) {
-                database.query("select member from member where address = '" + txt_email.Text + "'");
+                database.query("select member_id from member where address = '" + txt_email.Text + "' and password = '"+pwBox.Text+"'");
+                Gvar.Current_User_ID = database.returnSingle;
+                database.query("select member from member where member_id = '" + Gvar.Current_User_ID + "'");
                 if (database.returnSingle == "Admin")
                 {
+                    Gvar.CurrentUserIsAdmin = true;
                     this.Hide();
                     library_Menu_Admin.ShowDialog();
+                    
+                    
+                    
                 }
                 else
                 {
-
+                    Gvar.CurrentUserIsAdmin = false;
                     this.Hide();
                     library_Menu.ShowDialog();
                 }

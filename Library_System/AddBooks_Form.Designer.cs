@@ -419,6 +419,7 @@
             this.Name = "AddBooks_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewBooks_Form";
+            this.Load += new System.EventHandler(this.AddBooks_Form_Load);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
