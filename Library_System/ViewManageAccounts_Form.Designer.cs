@@ -122,7 +122,7 @@
             // savedata
             // 
             this.savedata.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedata.Location = new System.Drawing.Point(414, 364);
+            this.savedata.Location = new System.Drawing.Point(412, 353);
             this.savedata.Name = "savedata";
             this.savedata.Size = new System.Drawing.Size(182, 53);
             this.savedata.TabIndex = 55;
@@ -256,7 +256,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 40);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
@@ -283,7 +283,6 @@
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(439, 24);
             this.txt_name.TabIndex = 15;
-            this.txt_name.Text = "Steven Universe";
             // 
             // label2
             // 

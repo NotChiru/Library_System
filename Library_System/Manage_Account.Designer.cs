@@ -31,12 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_addAccount = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.emBox = new System.Windows.Forms.TextBox();
             this.btn_accountDetails = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this._process = new System.Windows.Forms.Timer(this.components);
@@ -49,11 +46,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.btn_addAccount);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.emBox);
             this.panel1.Controls.Add(this.btn_accountDetails);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(0, 11);
@@ -73,17 +67,6 @@
             this.btn_addAccount.Text = "ADD ACCOUNT";
             this.btn_addAccount.UseVisualStyleBackColor = true;
             this.btn_addAccount.Click += new System.EventHandler(this.btn_addAccount_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(189, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 26);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "DELETE ACCOUNT";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -119,25 +102,6 @@
             this.label1.Text = "Manage Account";
             this.label1.UseWaitCursor = true;
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(20, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 36);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "🔍";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // emBox
-            // 
-            this.emBox.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emBox.Location = new System.Drawing.Point(53, 74);
-            this.emBox.Name = "emBox";
-            this.emBox.Size = new System.Drawing.Size(303, 35);
-            this.emBox.TabIndex = 35;
-            // 
             // btn_accountDetails
             // 
             this.btn_accountDetails.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,12 +118,12 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 114);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 84);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(861, 328);
+            this.dataGridView1.Size = new System.Drawing.Size(861, 358);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -181,7 +145,6 @@
             this.Text = "Book_Menu";
             this.Load += new System.EventHandler(this.onready);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -193,12 +156,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_addAccount;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox emBox;
         private System.Windows.Forms.Button btn_accountDetails;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer _process;

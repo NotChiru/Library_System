@@ -30,20 +30,23 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.Logout = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_manageAccounts = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_manageBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_bookReports = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_library = new System.Windows.Forms.ToolStripMenuItem();
             this.Account_Details = new System.Windows.Forms.LinkLabel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.memidLabel = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
+            this.Logout = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_manageAccounts = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_manageBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_bookReports = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_library = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -84,6 +87,94 @@
             this.toolStripMenuItem6.Size = new System.Drawing.Size(240, 28);
             this.toolStripMenuItem6.Text = "                                            ";
             // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem8.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem8.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem8.Text = "                                            ";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem1.Text = "                               ";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem4.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem4.Text = "                               ";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem5.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.toolStripMenuItem5.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(240, 28);
+            this.toolStripMenuItem5.Text = "                                            ";
+            // 
+            // Account_Details
+            // 
+            this.Account_Details.AutoSize = true;
+            this.Account_Details.BackColor = System.Drawing.Color.LightGray;
+            this.Account_Details.Location = new System.Drawing.Point(13, 174);
+            this.Account_Details.Name = "Account_Details";
+            this.Account_Details.Size = new System.Drawing.Size(73, 13);
+            this.Account_Details.TabIndex = 21;
+            this.Account_Details.TabStop = true;
+            this.Account_Details.Text = "View Account";
+            this.Account_Details.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Account_Details_LinkClicked);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.LightGray;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(16, 190);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(112, 22);
+            this.checkBox1.TabIndex = 28;
+            this.checkBox1.Text = "Debug Mode";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // memidLabel
+            // 
+            this.memidLabel.AutoSize = true;
+            this.memidLabel.BackColor = System.Drawing.Color.LightGray;
+            this.memidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memidLabel.Location = new System.Drawing.Point(12, 152);
+            this.memidLabel.Name = "memidLabel";
+            this.memidLabel.Size = new System.Drawing.Size(108, 20);
+            this.memidLabel.TabIndex = 31;
+            this.memidLabel.Text = "00000000000";
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.BackColor = System.Drawing.Color.LightGray;
+            this.NameLabel.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.ForeColor = System.Drawing.Color.Black;
+            this.NameLabel.Location = new System.Drawing.Point(12, 132);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(90, 21);
+            this.NameLabel.TabIndex = 30;
+            this.NameLabel.Text = "Archille";
+            // 
             // Logout
             // 
             this.Logout.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -96,16 +187,6 @@
             this.Logout.Size = new System.Drawing.Size(240, 28);
             this.Logout.Text = "LOG OUT";
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem8.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem8.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem8.Text = "                                            ";
             // 
             // menu_manageAccounts
             // 
@@ -120,16 +201,6 @@
             this.menu_manageAccounts.Text = "Manage Accounts";
             this.menu_manageAccounts.Click += new System.EventHandler(this.menu_manageAccounts_Click);
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem1.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem1.Text = "                               ";
-            // 
             // menu_manageBooks
             // 
             this.menu_manageBooks.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -142,16 +213,6 @@
             this.menu_manageBooks.Size = new System.Drawing.Size(240, 28);
             this.menu_manageBooks.Text = "Manage Books";
             this.menu_manageBooks.Click += new System.EventHandler(this.menu_books_Click_1);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem4.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem4.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem4.Text = "                               ";
             // 
             // menu_bookReports
             // 
@@ -168,16 +229,6 @@
             this.menu_bookReports.Text = "Book Reports";
             this.menu_bookReports.Click += new System.EventHandler(this.menu_bookReports_Click);
             // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem5.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.toolStripMenuItem5.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(240, 28);
-            this.toolStripMenuItem5.Text = "                                            ";
-            // 
             // menu_library
             // 
             this.menu_library.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -193,57 +244,35 @@
             this.menu_library.Text = "Library Menu";
             this.menu_library.Click += new System.EventHandler(this.menu_library_Click);
             // 
-            // Account_Details
+            // pictureBox1
             // 
-            this.Account_Details.AutoSize = true;
-            this.Account_Details.BackColor = System.Drawing.Color.LightGray;
-            this.Account_Details.Location = new System.Drawing.Point(21, 117);
-            this.Account_Details.Name = "Account_Details";
-            this.Account_Details.Size = new System.Drawing.Size(73, 13);
-            this.Account_Details.TabIndex = 21;
-            this.Account_Details.TabStop = true;
-            this.Account_Details.Text = "View Account";
-            this.Account_Details.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Account_Details_LinkClicked);
+            this.pictureBox1.BackgroundImage = global::Library_System.Properties.Resources.library_bg;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 100);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
-            // checkBox1
+            // label1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(55, 147);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(140, 28);
-            this.checkBox1.TabIndex = 28;
-            this.checkBox1.Text = "Debug Mode";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // memidLabel
-            // 
-            this.memidLabel.AutoSize = true;
-            this.memidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memidLabel.Location = new System.Drawing.Point(4, 48);
-            this.memidLabel.Name = "memidLabel";
-            this.memidLabel.Size = new System.Drawing.Size(51, 20);
-            this.memidLabel.TabIndex = 31;
-            this.memidLabel.Text = "label1";
-            // 
-            // NameLabel
-            // 
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.BackColor = System.Drawing.Color.LightGray;
-            this.NameLabel.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLabel.ForeColor = System.Drawing.Color.Black;
-            this.NameLabel.Location = new System.Drawing.Point(4, 9);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(90, 21);
-            this.NameLabel.TabIndex = 30;
-            this.NameLabel.Text = "Archille";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 21);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Welcome,";
             // 
             // Library_Menu_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 552);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.memidLabel);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.checkBox1);
@@ -258,6 +287,7 @@
             this.Shown += new System.EventHandler(this.onready);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,5 +310,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label memidLabel;
         private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

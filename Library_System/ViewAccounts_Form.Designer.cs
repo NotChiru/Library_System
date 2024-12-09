@@ -269,7 +269,6 @@
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(439, 24);
             this.txt_name.TabIndex = 15;
-            this.txt_name.Text = "Steven Universe";
             // 
             // label2
             // 

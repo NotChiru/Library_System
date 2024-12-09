@@ -70,7 +70,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btn_createAcc);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel2.Location = new System.Drawing.Point(-15, 56);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -95,7 +94,7 @@
             // 
             this.btn_createAcc.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_createAcc.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btn_createAcc.Location = new System.Drawing.Point(741, 19);
+            this.btn_createAcc.Location = new System.Drawing.Point(741, 387);
             this.btn_createAcc.Name = "btn_createAcc";
             this.btn_createAcc.Size = new System.Drawing.Size(157, 30);
             this.btn_createAcc.TabIndex = 56;
@@ -107,6 +106,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.btn_createAcc);
             this.panel1.Controls.Add(this.btn_showpass);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pwBox);
@@ -137,7 +137,7 @@
             "Admin",
             "Regular",
             "Student"});
-            this.comboBox1.Location = new System.Drawing.Point(526, 277);
+            this.comboBox1.Location = new System.Drawing.Point(503, 262);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 60;
@@ -176,7 +176,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(472, 236);
+            this.dateTimePicker1.Location = new System.Drawing.Point(475, 213);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(405, 24);
             this.dateTimePicker1.TabIndex = 55;
@@ -186,7 +186,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(415, 277);
+            this.label9.Location = new System.Drawing.Point(391, 266);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 17);
             this.label9.TabIndex = 52;
@@ -216,7 +216,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(388, 242);
+            this.label16.Location = new System.Drawing.Point(391, 219);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(78, 17);
             this.label16.TabIndex = 31;
@@ -278,7 +278,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(359, 339);
+            this.label2.Location = new System.Drawing.Point(359, 341);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(558, 31);
             this.label2.TabIndex = 34;

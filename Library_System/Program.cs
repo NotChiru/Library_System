@@ -44,8 +44,7 @@ namespace Library_System
     public static class database
     {
         //PUT THE CONNECTOR PORT HERE AS A BY RIGHT CLICKING THE DATABASE AND TAKE THE DATAPORT FORM THE PROPERITES
-        static string database_properties = "Data Source=localhost; user id='root'; Initial Catalog='libsys_db'";
-        //PLS DO THIS OR ELSE PROGRAM WILL FAIL TO RUN DUMB SKIBIDI GYATT
+        static string database_properties = "Data Source=localhost; user id='root'; Initial Catalog='libsys_dataB'";
 
         static MySqlCommand cmd = new MySqlCommand();//DONT TOUCH THIS BTW
         static MySqlConnection con = new MySqlConnection(database_properties);

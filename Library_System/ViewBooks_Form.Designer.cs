@@ -32,13 +32,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.borrow_labe = new System.Windows.Forms.Label();
             this.txt_dateAdded = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_fee = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_copyright = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_refNo = new System.Windows.Forms.TextBox();
             this.txt_bookType = new System.Windows.Forms.TextBox();
@@ -46,15 +45,12 @@
             this.btn_borrow = new System.Windows.Forms.Button();
             this.txt_category = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txt_price = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txt_author = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_title = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.borrow_labe = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -100,12 +96,10 @@
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.borrow_labe);
             this.panel1.Controls.Add(this.txt_dateAdded);
-            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txt_fee);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txt_copyright);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txt_refNo);
             this.panel1.Controls.Add(this.txt_bookType);
@@ -113,8 +107,6 @@
             this.panel1.Controls.Add(this.btn_borrow);
             this.panel1.Controls.Add(this.txt_category);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.txt_price);
-            this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.txt_author);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
@@ -128,6 +120,18 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // borrow_labe
+            // 
+            this.borrow_labe.AutoSize = true;
+            this.borrow_labe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrow_labe.ForeColor = System.Drawing.Color.Red;
+            this.borrow_labe.Location = new System.Drawing.Point(266, 394);
+            this.borrow_labe.Name = "borrow_labe";
+            this.borrow_labe.Size = new System.Drawing.Size(452, 33);
+            this.borrow_labe.TabIndex = 51;
+            this.borrow_labe.Text = "Book is Currently Being Borrowed";
+            this.borrow_labe.Visible = false;
+            // 
             // txt_dateAdded
             // 
             this.txt_dateAdded.Enabled = false;
@@ -136,17 +140,6 @@
             this.txt_dateAdded.Name = "txt_dateAdded";
             this.txt_dateAdded.Size = new System.Drawing.Size(212, 24);
             this.txt_dateAdded.TabIndex = 47;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(222, 238);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 17);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Date Added:";
             // 
             // label8
             // 
@@ -186,20 +179,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(535, 277);
+            this.label6.Location = new System.Drawing.Point(226, 238);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 17);
             this.label6.TabIndex = 42;
             this.label6.Text = "Copyright:";
-            // 
-            // txt_copyright
-            // 
-            this.txt_copyright.Enabled = false;
-            this.txt_copyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_copyright.Location = new System.Drawing.Point(538, 297);
-            this.txt_copyright.Name = "txt_copyright";
-            this.txt_copyright.Size = new System.Drawing.Size(180, 24);
-            this.txt_copyright.TabIndex = 41;
             // 
             // label5
             // 
@@ -274,26 +258,6 @@
             this.label16.TabIndex = 31;
             this.label16.Text = "Category:";
             // 
-            // txt_price
-            // 
-            this.txt_price.Enabled = false;
-            this.txt_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_price.Location = new System.Drawing.Point(646, 188);
-            this.txt_price.Name = "txt_price";
-            this.txt_price.Size = new System.Drawing.Size(72, 24);
-            this.txt_price.TabIndex = 30;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(588, 192);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 17);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "Pages:";
-            // 
             // txt_author
             // 
             this.txt_author.Enabled = false;
@@ -333,7 +297,6 @@
             this.txt_title.Name = "txt_title";
             this.txt_title.Size = new System.Drawing.Size(405, 24);
             this.txt_title.TabIndex = 15;
-            this.txt_title.Text = "Steven Universe";
             // 
             // label2
             // 
@@ -357,18 +320,6 @@
             this.label3.Size = new System.Drawing.Size(558, 31);
             this.label3.TabIndex = 35;
             this.label3.Text = "__________________________________";
-            // 
-            // borrow_labe
-            // 
-            this.borrow_labe.AutoSize = true;
-            this.borrow_labe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.borrow_labe.ForeColor = System.Drawing.Color.Red;
-            this.borrow_labe.Location = new System.Drawing.Point(266, 394);
-            this.borrow_labe.Name = "borrow_labe";
-            this.borrow_labe.Size = new System.Drawing.Size(452, 33);
-            this.borrow_labe.TabIndex = 51;
-            this.borrow_labe.Text = "Book is Currently Being Borrowed";
-            this.borrow_labe.Visible = false;
             // 
             // ViewBooks_Form
             // 
@@ -400,8 +351,6 @@
         private System.Windows.Forms.Button btn_borrow;
         private System.Windows.Forms.TextBox txt_category;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txt_price;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txt_author;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -411,14 +360,12 @@
         private System.Windows.Forms.TextBox txt_bookType;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_copyright;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_refNo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_fee;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_dateAdded;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label borrow_labe;
     }
 }

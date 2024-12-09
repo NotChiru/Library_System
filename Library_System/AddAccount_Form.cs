@@ -52,6 +52,7 @@ namespace Library_System
             bool validation = emailAdd.IsMatch(txt_email.Text) && name.IsMatch(txt_name.Text);// && studNo.IsMatch(txt_accNo.Text);
             
             if (true){
+                MessageBox.Show("Account Created");
                 String values = "'" + txt_accNo.Text + "','" + txt_name.Text + "','" + txt_email.Text + "','" + dateTimePicker1.Text + "','" + comboBox1.Text + "','" + pwBox.Text + "'";
                 database.query("insert into member (member_id,memname,address,bday,member,password) values (" + values + ")");
             } else

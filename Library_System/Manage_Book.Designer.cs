@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_addBook = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,8 +48,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.btn_addBook);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.yfilter);
@@ -65,29 +61,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(908, 523);
             this.panel1.TabIndex = 7;
-            // 
-            // btn_addBook
-            // 
-            this.btn_addBook.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addBook.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btn_addBook.Location = new System.Drawing.Point(20, 451);
-            this.btn_addBook.Name = "btn_addBook";
-            this.btn_addBook.Size = new System.Drawing.Size(163, 26);
-            this.btn_addBook.TabIndex = 46;
-            this.btn_addBook.Text = "ADD BOOK";
-            this.btn_addBook.UseVisualStyleBackColor = true;
-            this.btn_addBook.Click += new System.EventHandler(this.btn_addBook_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(189, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 26);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "DELETE BOOK";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -228,8 +201,6 @@
         private System.Windows.Forms.TextBox emBox;
         private System.Windows.Forms.Button btn_bookDetails;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_addBook;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer process;
     }

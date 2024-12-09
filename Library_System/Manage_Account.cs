@@ -59,5 +59,15 @@ namespace Library_System
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

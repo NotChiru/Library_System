@@ -19,12 +19,7 @@ namespace Library_System
             InitializeComponent();
         }
         ViewBooks_Form viewBooks_Form = new ViewBooks_Form();
-        AddBooks_Form addBooks_Form = new AddBooks_Form();
 
-        private void btn_addBook_Click(object sender, EventArgs e)
-        {
-            addBooks_Form.ShowDialog();
-        }
 
         private void btn_bookDetails_Click(object sender, EventArgs e)
         {
@@ -77,6 +72,11 @@ namespace Library_System
 
 
             dataGridView1.DataSource = Gvar.Book_Menu_Table;
+        }
+
+        private void btn_deleteBook_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -35,7 +35,7 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.0\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -124,12 +124,6 @@
     <Compile Include="ViewAccounts_Form.Designer.cs">
       <DependentUpon>ViewAccounts_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddBooks_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddBooks_Form.Designer.cs">
-      <DependentUpon>AddBooks_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewBooks_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,9 +176,6 @@
     <EmbeddedResource Include="ViewAccounts_Form.resx">
       <DependentUpon>ViewAccounts_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddBooks_Form.resx">
-      <DependentUpon>AddBooks_Form.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ViewBooks_Form.resx">
       <DependentUpon>ViewBooks_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\blackBorder_transparent.png" />
+    <None Include="Resources\library_bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
