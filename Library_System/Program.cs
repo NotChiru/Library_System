@@ -27,8 +27,9 @@ namespace Library_System
         public static DataTable Account_Manage_Table = new DataTable();
         public static DataTable Book_Menu_Table = new DataTable();
         public static DataTable Book_Report_Table = new DataTable();
-        public static String 
-        
+        public static String Accountmanager_selectedID = null;
+
+
     }
 
     public static class database

@@ -12,9 +12,10 @@ namespace Library_System
 {
     public partial class Manage_Account : Form
     {
-        String selectedID = null;
+        
         AddAccount_Form addAccountForm = new AddAccount_Form();
-        Manage_Account manageaccount = new Manage_Account();
+        ViewManageAccounts_Form viewmanageaccunts = new ViewManageAccounts_Form();
+
         public Manage_Account()
         {
             InitializeComponent();
@@ -38,9 +39,9 @@ namespace Library_System
 
         private void btn_accountDetails_Click(object sender, EventArgs e)
         {
-            if(selectedID != null)
+            if(Gvar.Accountmanager_selectedID != null)
             {
-                manageaccount.ShowDialog();
+                viewmanageaccunts.ShowDialog();
             } else { MessageBox.Show("No Accounts Selected"); }
         }
 

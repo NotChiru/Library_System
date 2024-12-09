@@ -32,6 +32,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_accType = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_gender = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_accNo = new System.Windows.Forms.TextBox();
             this.txt_address = new System.Windows.Forms.TextBox();
@@ -40,15 +44,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_gender = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txt_accType = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,6 +116,46 @@
             this.panel1.Size = new System.Drawing.Size(917, 432);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txt_accType
+            // 
+            this.txt_accType.Enabled = false;
+            this.txt_accType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txt_accType.Location = new System.Drawing.Point(417, 245);
+            this.txt_accType.Name = "txt_accType";
+            this.txt_accType.Size = new System.Drawing.Size(192, 24);
+            this.txt_accType.TabIndex = 53;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(414, 225);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(106, 17);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "Account Type:";
+            // 
+            // txt_gender
+            // 
+            this.txt_gender.Enabled = false;
+            this.txt_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txt_gender.Location = new System.Drawing.Point(768, 142);
+            this.txt_gender.Name = "txt_gender";
+            this.txt_gender.Size = new System.Drawing.Size(118, 24);
+            this.txt_gender.TabIndex = 51;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(699, 146);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 17);
+            this.label6.TabIndex = 50;
+            this.label6.Text = "Gender:";
             // 
             // label5
             // 
@@ -198,6 +238,18 @@
             this.label11.TabIndex = 26;
             this.label11.Text = "Email:";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 39);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(366, 378);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -242,58 +294,6 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "__________________________________";
             // 
-            // txt_gender
-            // 
-            this.txt_gender.Enabled = false;
-            this.txt_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_gender.Location = new System.Drawing.Point(768, 142);
-            this.txt_gender.Name = "txt_gender";
-            this.txt_gender.Size = new System.Drawing.Size(118, 24);
-            this.txt_gender.TabIndex = 51;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(699, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 17);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Gender:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 39);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(366, 378);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // txt_accType
-            // 
-            this.txt_accType.Enabled = false;
-            this.txt_accType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txt_accType.Location = new System.Drawing.Point(417, 245);
-            this.txt_accType.Name = "txt_accType";
-            this.txt_accType.Size = new System.Drawing.Size(192, 24);
-            this.txt_accType.TabIndex = 53;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(414, 225);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 17);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "Account Type:";
-            // 
             // ViewAccounts_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +304,7 @@
             this.Name = "ViewAccounts_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewBooks_Form";
+            this.Shown += new System.EventHandler(this.onready);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -36,5 +36,10 @@ namespace Library_System
         {
 
         }
+
+        private void onready(object sender, EventArgs e)
+        {
+            database.query("sele")
+        }
     }
 }
